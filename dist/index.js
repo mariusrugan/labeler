@@ -995,7 +995,8 @@ function labeler() {
                 }
                 // core.setOutput('new-labels', newLabels.join(','));
                 core.setOutput('new-labels', [29]);
-                core.setOutput('all-labels', labelsToAdd.join(','));
+                // core.setOutput('all-labels', labelsToAdd.join(','));
+                core.setOutput('all-labels', [29]);
                 if (excessLabels.length) {
                     core.warning(`Maximum of ${GITHUB_MAX_LABELS} labels allowed. Excess labels: ${excessLabels.join(', ')}`, { title: 'Label limit for a PR exceeded' });
                 }

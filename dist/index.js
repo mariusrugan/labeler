@@ -993,11 +993,8 @@ function labeler() {
                     core.setFailed(error.message);
                     return;
                 }
-                // core.setOutput('new-labels', newLabels.join(','));
-                core.setOutput('new-labels', [29]);
-                console.log("AAA");
-                // core.setOutput('all-labels', labelsToAdd.join(','));
-                core.setOutput('all-labels', [29]);
+                core.setOutput('new-labels', newLabels.join(','));
+                core.setOutput('all-labels', labelsToAdd.join(','));
                 if (excessLabels.length) {
                     core.warning(`Maximum of ${GITHUB_MAX_LABELS} labels allowed. Excess labels: ${excessLabels.join(', ')}`, { title: 'Label limit for a PR exceeded' });
                 }

@@ -995,6 +995,7 @@ function labeler() {
                 }
                 // core.setOutput('new-labels', newLabels.join(','));
                 core.setOutput('new-labels', [29]);
+                console.log("AAA");
                 // core.setOutput('all-labels', labelsToAdd.join(','));
                 core.setOutput('all-labels', [29]);
                 if (excessLabels.length) {

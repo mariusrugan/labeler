@@ -29,4 +29,4 @@ outputs:
     description: 'A comma-separated list of all labels that the PR contains'
 runs:
   using: 'node20'
-  main: 'src/main.ts'
+  main: 'dist/index.js'
